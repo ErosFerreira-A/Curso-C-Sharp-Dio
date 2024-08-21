@@ -1,0 +1,14 @@
+C:\Users\User\Documents\CSP\.NET\cod\obj\Debug\net8.0\cod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\CSP\.NET\cod\obj\Debug\net8.0\cod.AssemblyInfoInputs.cache
+C:\Users\User\Documents\CSP\.NET\cod\obj\Debug\net8.0\cod.AssemblyInfo.cs
+C:\Users\User\Documents\CSP\.NET\cod\obj\Debug\net8.0\cod.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\CSP\.NET\cod\bin\Debug\net8.0\cod.exe
+C:\Users\User\Documents\CSP\.NET\cod\bin\Debug\net8.0\cod.deps.json
+C:\Users\User\Documents\CSP\.NET\cod\bin\Debug\net8.0\cod.runtimeconfig.json
+C:\Users\User\Documents\CSP\.NET\cod\bin\Debug\net8.0\cod.dll
+C:\Users\User\Documents\CSP\.NET\cod\bin\Debug\net8.0\cod.pdb
+C:\Users\User\Documents\CSP\.NET\cod\obj\Debug\net8.0\cod.dll
+C:\Users\User\Documents\CSP\.NET\cod\obj\Debug\net8.0\refint\cod.dll
+C:\Users\User\Documents\CSP\.NET\cod\obj\Debug\net8.0\cod.pdb
+C:\Users\User\Documents\CSP\.NET\cod\obj\Debug\net8.0\cod.genruntimeconfig.cache
+C:\Users\User\Documents\CSP\.NET\cod\obj\Debug\net8.0\ref\cod.dll

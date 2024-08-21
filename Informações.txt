@@ -1,0 +1,19 @@
+Para realizarmos a tratativa de dados e converter em outro tipo de dados utilizamos o Convert. e  o Parse.
+
+Forma de escreve:
+
+int num = Convert.ToInt32(x);
+
+int a = int.Parse(x);
+
+A diferença principal dos dois métodos é forma como tratam o valor null.
+
+Convert iguala a 0 e o Parse retorna um erro o qual não permite a compilação do projeto.
+
+Para conversão de algum dado para string utiliza-se o ToString();
+
+CTRL + K + D - Formata o código.
+
+
+O operador condicional possibilita alterar o fluxo de saída dos dados no código.
+Controle de fluxo.

@@ -1,0 +1,42 @@
+.NET é uma plataforma de desenvolvimento unificado que permite a construção de sistemas e aplicações.
+
+C# é uma linguagem de programação usada no .NET .
+
+.NET 5 - para cima é multiplataforma, sendo uma continuação direta do .NET Core.
+
+Diferenças entre .NET framework(legado) e .NET -
+
+A versão legada só funciona no windows, e a versão .NET é a versão mais atual e é multiplataforma,
+
+Hospedar a aplicação em um servidor linux é muito mais barato.
+
+Sempre que eu fizer alterações no código seránecessário compilar o meu programa.
+
+Linguagem de alto nível é uma linguagem que é mais fácil do ser humano entender.
+
+Linguagem de baixo nível: linguagem em que o computador entende.
+
+Aprofundar-se em como funciona o compilador do .NET .
+
+Compilador e Transpilador:
+
+Compilador é quando compila da linguagem de alto nível para baixo nível.
+
+Todo arquivo programavél tem a extensão .cs
+
+Sendo que Program.cs é minha classe.
+
+No csproj utiliza uma linguagem XML, Arquivo de projeto do C#.
+Informações descretivas.
+
+Transpilador é a conversão de uma linguagem ou implementação para outra. A saída permanece em linguagem de alto nível.
+Ex : TypeScript para JavaScript.
+
+Método é o que iria ser feito com os atributos.
+
+Program.cs é o ponto de entra no nosso sistema, toda ação é feito nela.
+
+Através do namespace que será reconhecido a classe
+
+
+
