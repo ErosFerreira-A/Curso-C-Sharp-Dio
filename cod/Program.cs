@@ -11,5 +11,8 @@ class Program {
         calc.Dividir(10.0, 2.0);
         calc.Dividir(10, 0);
         calc.Potencia(10, 10);
+        calc.Seno(30);
+        calc.Coseno(30);
+        calc.Tangente(30);
     }
 }

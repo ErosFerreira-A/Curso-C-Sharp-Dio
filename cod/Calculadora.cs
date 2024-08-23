@@ -28,5 +28,23 @@ namespace Calculadora.App {
             Console.WriteLine($"{num1} * {num2} = {resultado}");
         }
 
+        public void Seno(double angulo) {
+            double radiano = angulo * (Math.PI / 180);
+            double seno = Math.Sin(radiano);
+            Console.WriteLine($"O Valor do Seno de {angulo}° = {Math.Round(seno,4)}");
+        }
+
+        public void Coseno(double angulo) {
+            double radiano = angulo * (Math.PI / 180);
+            double cos = Math.Cos(radiano);
+            Console.WriteLine($"O Valor do Coseno de {angulo}° = {Math.Round(cos,4)}");
+        }
+
+        public void Tangente(double angulo) {
+            double radiano = angulo * (Math.PI / 180);
+            double tan = Math.Tan(radiano);
+            Console.WriteLine($"O Valor da Tangente de {angulo}° = {Math.Round(tan,4)}");
+        }
+
     }
 }
