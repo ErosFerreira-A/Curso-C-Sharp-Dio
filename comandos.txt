@@ -4,3 +4,6 @@ dotnet run/ F5 - Executa o projeto.
 
 Ctrl + F5 - Executa e depura sem aparecer os detalhes em amarelo.
 
+\n - quebrea de linha.
+
+CTRL + K + D - Formata o código.

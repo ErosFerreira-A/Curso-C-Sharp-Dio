@@ -64,5 +64,5 @@ foreach(string car in cars){ - Leitura de índices do array utilizando-se do for
 
 Dentro do método utilizamos return para o retorno de valor.
 
-\n - quebrea de linha.
+
 

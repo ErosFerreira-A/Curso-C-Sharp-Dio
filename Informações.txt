@@ -12,7 +12,7 @@ Convert iguala a 0 e o Parse retorna um erro o qual não permite a compilação 
 
 Para conversão de algum dado para string utiliza-se o ToString();
 
-CTRL + K + D - Formata o código.
+
 
 
 O operador condicional possibilita alterar o fluxo de saída dos dados no código.

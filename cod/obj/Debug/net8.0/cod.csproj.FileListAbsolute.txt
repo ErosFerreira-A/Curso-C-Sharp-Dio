@@ -12,3 +12,4 @@ C:\Users\User\Documents\CSP\.NET\cod\obj\Debug\net8.0\refint\cod.dll
 C:\Users\User\Documents\CSP\.NET\cod\obj\Debug\net8.0\cod.pdb
 C:\Users\User\Documents\CSP\.NET\cod\obj\Debug\net8.0\cod.genruntimeconfig.cache
 C:\Users\User\Documents\CSP\.NET\cod\obj\Debug\net8.0\ref\cod.dll
+C:\Users\User\Documents\CSP\.NET\cod\obj\Debug\net8.0\cod.sourcelink.json
