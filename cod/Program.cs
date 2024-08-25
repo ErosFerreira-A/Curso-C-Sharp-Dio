@@ -1,18 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
 using Calculadora.App;
+using CursoCSharp;
 
 class Program {
-     static void Main(string[] args) {
-        Calcular calc = new Calcular();
+    static void Main(string[] args) {
+        var central = new CentralDeExercicios(new Dictionary<string, Action>() {
+                {"Calculadora - Fundamentos", Inicialização.Executar},
+                
+            });
 
-        calc.Somar(10.0, 5.0);
-        calc.Subtrair(10.0, 5.0);
-        calc.Multiplicar(10.0, 5.0);
-        calc.Dividir(10.0, 2.0);
-        calc.Dividir(10, 0);
-        calc.Potencia(10, 10);
-        calc.Seno(30);
-        calc.Coseno(30);
-        calc.Tangente(30);
+        central.SelecionarEExecutar();
+ 
     }
 }

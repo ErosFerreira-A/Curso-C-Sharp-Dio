@@ -13,7 +13,7 @@ Comenta da mesma forma que o JS
 
 Tipagem de variáveis começam com letra minúscula
 
-Através do uso de virgula é possível criar múltiplas variáveis de uma só vez
+Através do uso de virgula é possível criar múltiplas variáveis de uma só vez do mesmo tipo.
 Ex: int x = 5, y= 6, z= 50
 
 Váriaveis primitivas:

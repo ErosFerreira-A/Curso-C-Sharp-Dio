@@ -10,13 +10,13 @@ A versão legada só funciona no windows, e a versão .NET é a versão mais atu
 
 Hospedar a aplicação em um servidor linux é muito mais barato.
 
-Sempre que eu fizer alterações no código seránecessário compilar o meu programa.
+Sempre que eu fizer alterações no código será necessário compilar o meu programa.
 
 Linguagem de alto nível é uma linguagem que é mais fácil do ser humano entender.
 
 Linguagem de baixo nível: linguagem em que o computador entende.
 
-Aprofundar-se em como funciona o compilador do .NET .
+Aprofundar-se em como funciona o compilador do .NET .*
 
 Compilador e Transpilador:
 

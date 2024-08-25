@@ -1,5 +1,5 @@
-Não utilizar abreviação para facilitar a leitura por terceirosno código.
-O nome do meu arquivo obdeçao nome da classe.
+Não utilizar abreviação para facilitar a leitura por terceiros no código.
+O nome do meu arquivo obdece o nome da classe como convenção.
 
 1. Convenções de Nomenclatura
 1.1 PascalCase
@@ -14,6 +14,7 @@ Copiar código
 public class Pessoa { }
 public int NumeroDeIdentificacao { get; set; }
 public void CalcularTotal() { }
+
 1.2 camelCase
 Usada para nomes de variáveis locais, parâmetros de métodos e campos privados (não estáticos).
 
