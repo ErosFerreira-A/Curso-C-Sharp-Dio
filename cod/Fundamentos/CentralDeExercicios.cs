@@ -11,40 +11,62 @@ namespace CursoCSharp {
         }
 
         public void SelecionarEExecutar() {
-            int i = 1;
 
-            foreach (var exercicio in Exercicios) {
-                Console.WriteLine("{0}) {1}", i, exercicio.Key);
-                i++;
-            }
 
-            Console.Write("Digite o número (ou vazio para o último)? ");
 
-            int.TryParse(Console.ReadLine(), out int num);
-            bool numValido = num > 0 && num <= Exercicios.Count;
-            num = numValido ? num - 1 : Exercicios.Count - 1;
+            while (true) {
+                Console.Clear();
 
-            string nomeDoExercicio = Exercicios.ElementAt(num).Key;
+                // Obtenha uma lista dos exercícios para usar índices
+                var exerciciosLista = Exercicios.Keys.ToList();
 
-            Console.Write("\nExecutando exercício ");
-            Console.BackgroundColor = ConsoleColor.Yellow;
-            Console.ForegroundColor = ConsoleColor.Black;
-            Console.WriteLine(nomeDoExercicio);
-            Console.ResetColor();
+                // Use o índice da lista para garantir números estáveis
+                for (int i = 0; i < exerciciosLista.Count; i++) {
+                    Console.WriteLine("{0}) {1}", i + 1, exerciciosLista[i]);
+                }
 
-            Console.WriteLine(String.Concat(
-                Enumerable.Repeat("=", nomeDoExercicio.Length + 21)) + "\n");
 
-            Action executar = Exercicios.ElementAt(num).Value;
-            try {
-                executar();
-            } catch (Exception e) {
-                Console.BackgroundColor = ConsoleColor.Red;
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("Ocorreu um erro: {0}", e.Message);
+
+                Console.Write("Digite o número (ou vazio para o último)? ");
+                int.TryParse(Console.ReadLine(), out int num);
+                bool numValido = num > 0 && num <= Exercicios.Count;
+                num = numValido ? num - 1 : Exercicios.Count - 1;
+
+
+
+                string nomeDoExercicio = Exercicios.ElementAt(num).Key;
+
+                Console.Write("\nExecutando exercício ");
+                Console.BackgroundColor = ConsoleColor.Yellow;
+                Console.ForegroundColor = ConsoleColor.Black;
+                Console.WriteLine(nomeDoExercicio);
                 Console.ResetColor();
 
-                Console.WriteLine(e.StackTrace);
+                Console.WriteLine(String.Concat(
+                    Enumerable.Repeat("=", nomeDoExercicio.Length + 21)) + "\n");
+
+                Action executar = Exercicios.ElementAt(num).Value;
+                try {
+                    executar();
+                } catch (Exception e) {
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("Ocorreu um erro: {0}", e.Message);
+                    Console.ResetColor();
+
+                    Console.WriteLine(e.StackTrace);
+                }
+
+                //Lógica da Saída do programa:
+                Console.WriteLine("Deseja sair do Programa ? Sim para sair || Para continuar pressione qualquer tecla...");
+                string resposta = Console.ReadLine();
+                if (resposta.ToLower() == "sim") {
+                    Console.WriteLine($"Sua resposta foi {resposta}");
+                    Console.WriteLine("O programa irá encerrar");
+                    Environment.Exit(0);
+                } else if (resposta.ToLower() == "não") {
+                    Console.WriteLine($"Sua resposta foi {resposta}, o programa continuará a execução.");
+                }
             }
         }
     }
