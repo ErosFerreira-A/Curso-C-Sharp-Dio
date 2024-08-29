@@ -1,0 +1,15 @@
+Está relacionada com o conceito de abstração relacionada ao POO.
+
+Abstração: Transformar os conceitos de algo do mundo real em algo dentro do mundo da programação.
+
+Representar o que é estritamente necessário.
+
+O método é uma ação que nossa classe fará, parecido com a função do javascript.
+
+Por exemplo caso eu queira representar uma pessoa.
+
+Eu crio um objeto do tipo pessoa no meu programa.
+
+Classe: Conceito representado do mundo real.
+
+namespace - é o caminho para minha classe.

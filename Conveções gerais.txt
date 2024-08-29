@@ -1,0 +1,173 @@
+Não utilizar abreviação para facilitar a leitura por terceiros no código.
+O nome do meu arquivo obdece o nome da classe como convenção.
+
+1. Convenções de Nomenclatura
+1.1 PascalCase
+Usada para nomes de classes, propriedades, métodos, eventos, namespaces e enumerações.
+
+Cada palavra começa com uma letra maiúscula.
+
+Exemplos:
+
+csharp
+Copiar código
+public class Pessoa { }
+public int NumeroDeIdentificacao { get; set; }
+public void CalcularTotal() { }
+
+1.2 camelCase
+Usada para nomes de variáveis locais, parâmetros de métodos e campos privados (não estáticos).
+
+A primeira palavra começa com uma letra minúscula, e as palavras subsequentes começam com letras maiúsculas.
+
+Exemplos:
+
+csharp
+Copiar código
+int contador;
+string nomeCompleto;
+void SomarValores(int primeiroNumero, int segundoNumero) { }
+1.3 _camelCase (Underline + camelCase)
+Usada para campos privados.
+
+Geralmente, um sublinhado (_) é adicionado antes do nome da variável para diferenciá-la de outras variáveis.
+
+Exemplos:
+
+csharp
+Copiar código
+private int _contador;
+private string _nomeCompleto;
+1.4 UPPER_CASE
+Usada para constantes.
+
+Todas as letras são maiúsculas, e as palavras são separadas por sublinhados.
+
+Exemplos:
+
+csharp
+Copiar código
+public const int MAX_VALOR = 100;
+public static readonly string PATH_ARQUIVO = "/caminho/para/arquivo";
+2. Espaçamento e Identação
+Identação: Use quatro espaços por nível de indentação. Não use tabulações (tabs).
+
+Espaçamento: Coloque espaços ao redor de operadores (=, +, -, etc.) e após vírgulas.
+
+Exemplos:
+
+csharp
+Copiar código
+if (a == b)
+{
+    Console.WriteLine("Iguais");
+}
+
+int soma = a + b;
+3. Chaves e Blocos de Código
+Sempre use chaves { } mesmo para blocos de código de uma única linha.
+
+As chaves devem estar em linhas separadas.
+
+Exemplos:
+
+csharp
+Copiar código
+if (a > b)
+{
+    Console.WriteLine("A é maior que B");
+}
+
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(i);
+}
+4. Comentários
+Use comentários de linha (//) para comentários curtos e comentários de bloco (/* */) para explicações mais longas.
+
+Para documentar classes, métodos e propriedades, use comentários de documentação (///), que podem ser processados por ferramentas como o Sandcastle para gerar documentação API.
+
+Exemplos:
+
+csharp
+Copiar código
+// Este método calcula o total de itens.
+public int CalcularTotal(int quantidade, int preco)
+{
+    return quantidade * preco; // Multiplica quantidade pelo preço
+}
+
+/*
+ * Este é um comentário de bloco.
+ * Ele pode ser usado para explicar seções mais longas de código.
+ */
+csharp
+Copiar código
+/// <summary>
+/// Este método calcula o total de itens.
+/// </summary>
+/// <param name="quantidade">A quantidade de itens.</param>
+/// <param name="preco">O preço por item.</param>
+/// <returns>O valor total.</returns>
+public int CalcularTotal(int quantidade, int preco)
+{
+    return quantidade * preco;
+}
+5. Organização do Código
+Mantenha as usings organizadas: Coloque as declarações de using na parte superior do arquivo, organizadas em ordem alfabética. Evite usings desnecessários.
+
+Agrupe membros semelhantes: Em uma classe, organize os membros de maneira lógica (por exemplo, campos privados, propriedades, métodos públicos, métodos privados).
+
+Use regiões com moderação: Embora #region possa ser usado para agrupar partes do código, ele deve ser usado com moderação, pois pode esconder código importante.
+
+Exemplo:
+
+csharp
+Copiar código
+using System;
+using System.Collections.Generic;
+
+namespace Exemplo
+{
+    public class Pessoa
+    {
+        // Campos privados
+        private string _nome;
+        private int _idade;
+
+        // Propriedades públicas
+        public string Nome { get; set; }
+        public int Idade { get; set; }
+
+        // Métodos públicos
+        public void Apresentar()
+        {
+            Console.WriteLine($"Olá, sou {_nome} e tenho {_idade} anos!");
+        }
+
+        // Métodos privados
+        private void MetodoPrivado()
+        {
+            // Lógica aqui
+        }
+    }
+}
+6. Linguagem Neutra e Inclusiva
+Use linguagem neutra e inclusiva ao nomear variáveis, métodos, etc. Evite nomes que possam ser considerados ofensivos ou excludentes.
+7. Outras Práticas Recomendadas
+Métodos curtos: Cada método deve ter uma responsabilidade clara e ser curto o suficiente para caber na tela sem rolagem.
+Evite mágica: Números mágicos ou strings duras no código devem ser substituídos por constantes ou enumerações.
+Manutenção de estado mínima: Evite o uso excessivo de variáveis de estado. Prefira parâmetros e retornos de métodos.
+8. Ferramentas para Ajudar a Manter as Convenções
+Analisadores de Código: Ferramentas como o StyleCop ou Roslyn Analyzers ajudam a aplicar regras de codificação automaticamente.
+Formatadores de Código: O Visual Studio e o Visual Studio Code possuem funcionalidades integradas para formatar código automaticamente.
+Seguir essas convenções faz parte de escrever código C# de alta qualidade, tornando-o mais fácil de ler, manter e colaborar em equipes.
+
+Quando estiver trabalhando com valores decimais, temos três representações principais:
+
+decimal: Utilizado para representar dinheiro devido a sua precisão com valores monetários.
+
+Float: Tem uma variedade maior de número disponíveis, tem uma precisão de 32 bit para pontos flutuantes.
+
+Double: Representa 64 bit tendo uma maior variedade do que o float e tem uma maior precisão.
+

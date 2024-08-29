@@ -1,0 +1,68 @@
+Todo nome de classe tem que começar maiúsculo. Ex: PessoaFísica.
+
+prop - atalho para digitar propriedade
+
+public void Apresentar()
+{
+	Console.WriterLine($"Olá, meu nome é {Nome}, e minha idade é {idade}");
+}
+
+Utiliza o camelCase para nomes de variáveis.
+
+Comenta da mesma forma que o JS
+
+Tipagem de variáveis começam com letra minúscula
+
+Através do uso de virgula é possível criar múltiplas variáveis de uma só vez do mesmo tipo.
+Ex: int x = 5, y= 6, z= 50
+
+Váriaveis primitivas:
+
+
+int
+ myNum = 9;
+double
+ myDoubleNum = 8.99;
+char
+ myLetter = 'A';
+bool
+ myBoolean = false;
+string
+ myText = "Hello World";
+
+ _______
+
+ Input:
+
+ Console.WriteLine("Digite o nome de usuário:");
+string
+nome_do_usuário = Console.ReadLine();
+Console.WriteLine("O nome de usuário é: " + userName);
+
+A função Math.Max(x,y ....); - retornar o maior valor número dentro dos parâmetros.
+
+A função Math.Sqrt(x); - Calcula a raiz quadrada.
+
+A função Math.Round(x,y); - Arredonda o número para o valor mais próximo.
+
+== - Sinal de igual
+
+
+string[]cars = {"Volvo", "BMW", "Ford", "Mazda"}; - Estrutura para array
+
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+cars[0] ="Opel";
+Console.WriteLine(cars[0]); - Trocando posição no array.
+
+for(int i = 0; i < cars.Length; i++){ - Lendo todos os índices do array através do Loop for
+    Console.WriteLine(cars[i]);
+}
+
+foreach(string car in cars){ - Leitura de índices do array utilizando-se do foreach
+	Console.WriteLine(car);
+}
+
+Dentro do método utilizamos return para o retorno de valor.
+
+
+

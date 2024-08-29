@@ -1,0 +1,9 @@
+migração no banco de dado
+
+sqllitte
+
+neon postgres
+
+ci/cd
+
+Tem mercado, mas bem mais fraco do que as outras stacks e cobrança maior em padrões de solid, clean code e DDD e orientação a objeto
